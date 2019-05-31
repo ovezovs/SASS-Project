@@ -11,3 +11,8 @@
     Incorporated maps and used loops to iterate through the maps;
 
 ### I made 2 commits to the repository. First one is the initial code and the second one has all of my modifications.
+
+### References
+
+    The original version of the SCSS and CSS files come from the Treehouse's SASS course:
+    https://teamtreehouse.com/library/sass-basics-2
