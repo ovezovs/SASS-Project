@@ -15,4 +15,4 @@
 ### References
 
     The original version of the SCSS and CSS files come from the Treehouse's SASS course:
-    https://teamtreehouse.com/library/sass-basics-2
+    https://teamtreehouse.com/library/sass-basics-2  
