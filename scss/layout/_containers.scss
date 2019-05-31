@@ -4,21 +4,16 @@
 
 // Main content
 .main-content {
-  display: flex;
-  flex-wrap: wrap;
-}  
-
-@media (min-width: 768px) {
-  .main-content {
-    @include center;
+  @include flexy($wrap: wrap);
+  @include mq('med') {
+      @include center(90%);
   }
-}
+}  
 
 // Inner
 .inner {
   padding: 0.5em 1em;
 }
-
 
 // Intro
 .intro {
@@ -26,12 +21,10 @@
   padding: 1em 1em 3em; 
   p {
     font-size: 1.2em; 
-  }  
-}
-
-@media (min-width: 992px) {
-  .intro {
-    width: 45%;
+  }
+  @include mq('lg') {
+      width: 45%;
   }
 }
+
 

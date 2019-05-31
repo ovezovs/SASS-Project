@@ -437,13 +437,13 @@ a {
 .main-content {
   display: flex;
   flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    .main-content {
+      width: 90%;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto; } }
 
-@media (min-width: 768px) {
-  .main-content {
-    width: 90%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto; } }
 .inner {
   padding: 0.5em 1em; }
 
@@ -452,10 +452,10 @@ a {
   padding: 1em 1em 3em; }
   .intro p {
     font-size: 1.2em; }
+  @media (min-width: 992px) {
+    .intro {
+      width: 45%; } }
 
-@media (min-width: 992px) {
-  .intro {
-    width: 45%; } }
 header {
   position: relative;
   height: 460px;
@@ -480,29 +480,33 @@ header {
     color: #eeea72;
     font-size: 1.25em;
     margin: 0; }
+  @media (max-width: 575px) {
+    header {
+      height: 340px; }
+      header h1 {
+        font-size: 3.4em; } }
+  @media (min-width: 992px) {
+    header {
+      background-position: 0 0, 0 45%; } }
 
-@media (max-width: 575px) {
-  header {
-    height: 340px; }
-    header h1 {
-      font-size: 3.4em; } }
-@media (min-width: 992px) {
-  header {
-    background-position: 0 0, 0 45%; } }
 .card {
   display: flex;
   flex-direction: column;
   padding: 1.5em 1em;
   border: 1px solid #eee;
-  border-radius: 0.25em; }
+  border-radius: 0.25em;
+  margin: 10px; }
   .card h1 {
     color: #278da4;
     margin: 0.35em 0 0;
     line-height: 1.25; }
+  @media (min-width: 576px) {
+    .card {
+      flex: 1 46%; } }
+  @media (min-width: 992px) {
+    .card {
+      flex-basis: 27.3333333333%; } }
 
-@media (min-width: 576px) {
-  .card {
-    flex: 1; } }
 footer {
   padding: 2em 0 0;
   height: 100px;
@@ -561,16 +565,29 @@ footer {
   font-size: 2.35em;
   color: #278da4; }
 
+.icn-ent {
+  color: #79ccf5; }
+.icn-arch {
+  color: #fd6fa6; }
+.icn-edu {
+  color: #23bbae; }
+.icn-theme {
+  color: #2377bb; }
+.icn-soc {
+  color: #ada3f0; }
+.icn-games {
+  color: #3cb144; }
+
 .img-featured {
   width: 165px;
-  border: 4px solid #fff;
+  height: 165px;
   border-radius: 50%;
+  border: 4px solid #fff;
   margin-top: 75px;
   position: relative;
   z-index: 100; }
-
-@media (max-width: 575px) {
-  .img-featured {
-    display: none; } }
+  @media (max-width: 575px) {
+    .img-featured {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */

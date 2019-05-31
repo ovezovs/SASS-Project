@@ -23,20 +23,14 @@ header {
     font-size: 1.25em;
     margin: 0;
   }
-}
-
-@media (max-width: 575px) {
-  header {
+  @media (max-width: $break-xs) {
     height: 340px;
     h1 {
       font-size: 3.4em;
     }
   }
-}
-
-@media (min-width: 992px) {
-  header {
-    background-position: 0 0, 0 45%;
+  @media (min-width: $break-l) {
+      background-position: 0 0, 0 45%;
   }
 }
 

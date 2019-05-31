@@ -3,16 +3,11 @@
 // ======================================
 
 .img-featured {
-    width: 165px;
-    border: 4px solid $white; 
-    border-radius: 50%;
-    margin-top: 75px;
-    position: relative;
-    z-index: 100;
-  }
-  
-  @media (max-width: 575px) {
-    .img-featured {
+  @include roundy(165px, 4px solid $white);
+  margin-top: 75px;
+  position: relative;
+  z-index: 100;
+  @include mq('xs') {
       display: none;
-    }
   }
+}
