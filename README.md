@@ -10,7 +10,7 @@
     Added conditionals to different media queries;
     Incorporated maps and used loops to iterate through the maps;
 
-### I made 2 commits to the repository. First one is the initial code and the second one has all of my modifications.
+### Made 2 commits to the repository. First one is the initial code and the second one has all of my modifications.
 
 ### References
 
